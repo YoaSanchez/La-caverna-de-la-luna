@@ -62,6 +62,7 @@ h4 {
 	max-width: 800px;
 }
 
+
 /** BOTONES **/
 .boton {
 	display: block;
@@ -296,6 +297,19 @@ h4 {
 	height: 4rem;
 	position: absolute;
 	left: -0.5rem;
+}
+
+.hide-xs{
+	display: none;
+}
+
+@media (min-width: 985px) {
+	.hide-xl{
+		display: none
+	}
+	.hide-xs{
+		display: flex;
+	}
 }
 
 
