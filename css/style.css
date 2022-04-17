@@ -104,7 +104,7 @@ h4 {
 }
 
 .site-header.inicio {
-	background-image: url(../img/header.jpg);
+	background-image: url(../assets/img/header.jpg);
 	background-position: center center;
 	background-size: cover;
 	height: 100vh;
@@ -247,7 +247,7 @@ h4 {
 
 /** CONTACTANOS **/
 .imagen-contacto {
-	background: url(../img/contactanos.jpg);
+	background: url(../assets/img/contactanos.jpg);
 	background-position: center center;
 	background-size: cover;
 	height: 40rem;
@@ -273,6 +273,8 @@ h4 {
 	color: #ffffff;
 	border-radius: 3rem;
 	margin: 0.2rem;
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -284,21 +286,18 @@ h4 {
 .testimonial p {
 	text-align: right;
 	text-transform: capitalize;
+	margin-top: auto;
 }
 
 .testimonial blockquote::before {
 	content: "";
-	background: url(../img/comilla.svg);
+	background: url(../assets/img/comilla.svg);
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	left: -0.5rem;
 }
 
-.autor{
-	position: relative;
-	padding-inline-start: 20rem;
-}
 
 /** FOOTER **/
 .site-footer {
