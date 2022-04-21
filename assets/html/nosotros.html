@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<title>La Caberna de la luna</title>
 </head>
@@ -15,18 +16,37 @@
 	<!-- INICIO HEADER -->
 	<header class="site-header nosotros">
 		<div class="contenedor contenido-header">
-			<div class="barra">
-				<a href="../../index.html">
-					<img src="../img/logo-removebg-preview.png" alt="Logotipo">
-				</a>
-
-				<!-- este es el navegador con sus links a otros html -->
-				<nav class="navegacion">
-					<a href="../../index.html">Inicio</a>
-					<a href="./nosotros.html">Nosotros</a>
-					<a href="./servicios.html">Servicios</a>
-					<a href="./testimonios.html">Testimonios</a>
-					<a href="./contacto.html">Contacto</a>
+			<div class="barra justify-content-around">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+					<div class="container-fluid">
+						<a href="../../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-5">
+							<img src="../img/logo-removebg-preview.png" alt="Logotipo">
+						</a>
+						<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse text-light ms-md-5" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item me-3">
+									<a class="nav-link text-light active" href="../../index.html">Inicio</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" aria-current="page"
+										href="./nosotros.html">Nosotros</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./servicios.html">Servicios</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./testimonios.html">Testimonios</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="./contacto.html">Contacto</a>
+								</li>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</div>
@@ -34,42 +54,49 @@
 	<!-- FIN HEADER -->
 
 	<!-- INICIO NOSOTROS -->
-	<main class="contenedor">
-		<h1 class="fw-300 centrar-texto">Conoce sobre nosotros</h1>
+	<main class="container">
 
-		<div class="contenido-nosotros">
-			<div class="imagen">
+		<h1 class="fw-300 centrar-texto">Conoce sobre nosotros</h1>
+		<div class="row justify-content-around">
+			<div class="col-md-6">
 				<img src="../img/nosotros.jpg" alt="Imagen Sobre Nosotros">
 			</div>
 
-			<div class="texto-nosotros">
-				<blockquote>15 Años de Experiencia</blockquote>
+			<div class="col-md-6">
+				<blockquote class="display-6">15 Años de Experiencia</blockquote>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequuntur et iure temporibus
 					consequatur quia suscipit veniam quae in. Ad et in dicta, aliquam voluptatum tenetur optio
-					consequatur fuga dolor?Lorem ipsum dolor sit amet, consectetur voluptatum tenetur optio consequatur
-					fuga dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iste placeat dolore,
+					consequatur fuga dolor?Lorem ipsum dolor sit amet, consectetur voluptatum tenetur optio
+					consequatur
+					fuga dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iste placeat
+					dolore,
 					dolorum quo doloribus atque. Dolorem quo aperiam inventore possimus sapiente ea, expedita culpa
-					voluptates! Perspiciatis perferendis, quidem reprehenderit. Lorem ipsum dolor sit amet, consectetur
+					voluptates! Perspiciatis perferendis, quidem reprehenderit. Lorem ipsum dolor sit amet,
+					consectetur
 					adipisicing elit. Temporibus debitis fuga, eveniet minus saepe, tenetur quidem. Consectetur sit
-					facere, numquam consequuntur ea repellat laudantium minima, dolores debitis saepe natus, aspernatur!
+					facere, numquam consequuntur ea repellat laudantium minima, dolores debitis saepe natus,
+					aspernatur!
 				</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequuntur et iure temporibus
 					consequatur quia suscipit veniam quae in. Ad et in dicta, aliquam voluptatum tenetur optio
 					consequatur fuga dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
 					reprehenderit, sequi. Nihil pariatur cupiditate enim voluptatum, reiciendis vero, ad in iure
-					accusamus ab velit magnam incidunt accusantium voluptatem distinctio consequuntur. Lorem ipsum dolor
-					sit amet, consectetur adipisicing elit. Voluptatem eligendi expedita inventore, nostrum provident
+					accusamus ab velit magnam incidunt accusantium voluptatem distinctio consequuntur. Lorem ipsum
+					dolor
+					sit amet, consectetur adipisicing elit. Voluptatem eligendi expedita inventore, nostrum
+					provident
 					perspiciatis ex. Quae consequuntur odio obcaecati eum illo</p>
 			</div>
 		</div>
+		</div>
 	</main>
 
-	<section class="contenedor seccion">
-		<h2 class="w-300 centrar-texto">Mas Sobre Nosotros</h2>
+	<section class="container">
+		<h2 class="fw-450 centrar-texto mb-5">conozcamonos</h2>
 
 
-		<div class="iconos-nosotros">
-			<div class="iconos">
+		<div class="row justify-content-around">
+			<div class="col-md-3 text-center">
 				<img src="../img/libro.png" alt="libro">
 				<h3 class="encabezado mayusculas">Estudios</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ipsa, nulla, incidunt illum,
@@ -78,7 +105,7 @@
 			</div>
 
 
-			<div class="iconos">
+			<div class="col-md-3 text-center">
 				<img src="../img/experiencia.png" alt="experiencia">
 				<h3 class="encabezado mayusculas">Experiencia</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ut harum, eos veniam praesentium
@@ -87,7 +114,7 @@
 			</div>
 
 
-			<div class="iconos">
+			<div class="col-md-3 text-center">
 				<img src="../img/ayuda.png" alt="manos con corazon">
 				<h3 class="encabezado mayusculas">Como te puede ayudar</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit doloremque aut accusantium
@@ -97,7 +124,7 @@
 		</div>
 	</section>
 	<!-- FIN NOSOTROS -->
- 
+
 	<!-- INICIO FOOTER -->
 	<footer class="site-footer seccion">
 		<div class="contenedor contenedor-footer">
@@ -109,7 +136,7 @@
 				<a href="./contacto.html">Contacto</a>
 			</nav>
 
-			<p class="copyright">todos los derechos reservados 2020 &copy;</p>
+			<p class="copyright">todos los derechos reservados 2022 &copy;</p>
 		</div>
 	</footer> <!-- FIN FOOTER -->
 

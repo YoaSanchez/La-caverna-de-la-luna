@@ -17,16 +17,37 @@
 	<!-- INICIO HEADER -->
 	<header class="site-header inicio">
 		<div class="contenedor contenido-header">
-			<div class="barra">
-				<a href="index.html">
-					<img src="./assets/img/logo-removebg-preview.png" alt="Logotipo">
-				</a>
-				<!-- este es el navegador con sus links a otros html -->
-				<nav class="navegacion">
-					<a href="./assets/html/nosotros.html">Nosotros</a>
-					<a href="./assets/html/servicios.html">Servicios</a>
-					<a href="./assets/html/testimonios.html">Testimonios</a>
-					<a href="./assets/html/contacto.html">Contacto</a>
+			<div class="barra justify-content-around">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+					<div class="container-fluid">
+						<a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-5">
+							<img src="./assets/img/logo-removebg-preview.png" alt="Logotipo">
+						</a>
+						<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse text-light ms-md-5" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item me-3">
+									<a class="nav-link text-light active" href="./index.html">Inicio</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" aria-current="page"
+										href="./assets/html/nosotros.html">Nosotros</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./assets/html/servicios.html">Servicios</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./assets/html/testimonios.html">Testimonios</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="./assets/html/contacto.html">Contacto</a>
+								</li>
+						</div>
+					</div>
 				</nav>
 			</div>
 
@@ -36,12 +57,12 @@
 	<!--FIN HEADER-->
 
 	<!-- INICIO NOSOTROS -->
-	<section class="contenedor seccion">
-		<h2 class="fw-450 centrar-texto">conozcamonos</h2>
+	<section class="container">
+		<h2 class="fw-450 centrar-texto mb-5">conozcamonos</h2>
 
 
-		<div class="iconos-nosotros">
-			<div class="iconos">
+		<div class="row justify-content-around">
+			<div class="col-md-3 text-center">
 				<img src="./assets/img/libro.png" alt="libro">
 				<h3 class="encabezado mayusculas">Estudios</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ipsa, nulla, incidunt illum,
@@ -49,8 +70,8 @@
 					fugiat minima deserunt?</p>
 			</div>
 
-
-			<div class="iconos">
+ 
+			<div class="col-md-3 text-center">
 				<img src="./assets/img/experiencia.png" alt="experiencia">
 				<h3 class="encabezado mayusculas">Experiencia</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ut harum, eos veniam praesentium
@@ -59,7 +80,7 @@
 			</div>
 
 
-			<div class="iconos">
+			<div class="col-md-3 text-center">
 				<img src="./assets/img/ayuda.png" alt="manos con corazon">
 				<h3 class="encabezado mayusculas">Como te puede ayudar</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit doloremque aut accusantium
@@ -120,12 +141,20 @@
 
 	<!-- INICIO CONTACTO -->
 	<section class="imagen-contacto">
-		<div class="contenedor contenido-contacto">
-			<h2>Resuelve tus dudas</h2>
-			<p>Llena el formulario y pongamosnos en contacto para descubrir que necesitas</p>
-			<a href="./assets/html/contacto.html" class="boton boton-morado">Contactanos</a>
+		<div class="contenedor contenido-contacto px-4 py-5 my-5 text-center">
+			<h2 class="display-5 fw-bold">Resuelve tus dudas</h2>
+			<div class="col-lg-6 mx-auto">
+				<p class="lead mb-4">Llena el formulario y pongamosnos en contacto para descubrir que necesitas</p>
+				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+					<a href="./assets/html/contacto.html"
+						class="btn btn-primary btn-lg px-4 gap-3 boton boton-morado">Contactanos</a>
+				</div>
+			</div>
 		</div>
 	</section>
+
+
+
 	<!-- FIN CONTACTO -->
 
 
@@ -161,58 +190,58 @@
 
 			</div>
 
-	<!-- INICIO TESTIMONIOS CAROUSEL-->
-	<div id="carouselExampleControls" class="carousel slide contenedor hide-xl" data-bs-ride="carousel">
-		<div class="carousel-inner">
-		  <div class="carousel-item active">
-			<div class="testimonial servicios servicios">
-				<blockquote>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vero repudiandae ea
-					architecto doloremque dicta unde ratione maxime earum soluta!
-				</blockquote>
-				<p class="autor">- Joaquin</p>
+			<!-- INICIO TESTIMONIOS CAROUSEL-->
+			<div id="carouselExampleControls" class="carousel slide contenedor hide-xl" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="testimonial servicios servicios">
+							<blockquote>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vero repudiandae ea
+								architecto doloremque dicta unde ratione maxime earum soluta!
+							</blockquote>
+							<p class="autor">- Joaquin</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="testimonial servicios servicios">
+							<blockquote>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi dignissimos
+								eos
+								officiis, sed laboriosam!
+							</blockquote>
+							<p class="autor">- claudia</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="testimonial servicios servicios">
+							<blockquote>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium suscipit deserunt
+								deleniti
+								fugiat saepe sequi asperiores error, quo repellendus ipsa tempora doloremque provident
+								quod,
+								officiis, debitis cupiditate!
+							</blockquote>
+							<p class="autor">- amanda</p>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-		  </div>
-		  <div class="carousel-item">
-			<div class="testimonial servicios servicios">
-				<blockquote>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi dignissimos eos
-					officiis, sed laboriosam!
-				</blockquote>
-				<p class="autor">- claudia</p>
-			</div>
-		  </div>
-		  <div class="carousel-item">
-			<div class="testimonial servicios servicios">
-				<blockquote>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium suscipit deserunt deleniti
-					fugiat saepe sequi asperiores error, quo repellendus ipsa tempora doloremque provident quod,
-					officiis, debitis cupiditate!
-				</blockquote>
-				<p class="autor">- amanda</p>
-			</div>
-		  </div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</button>
-	  </div>
-	<!-- FIN TESTIMONIOS CAROUSEL-->
 
-
-
-
-
+			<!-- FIN TESTIMONIOS CAROUSEL-->
 			<div class="ver-todas">
 				<a href="./assets/html/testimonios.html" class="boton boton-rosado">Ver Todos</a>
 			</div>
 		</section>
-
 	</div>
 	<!-- FIN TESTIMONIOS -->
 

@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<title>La Caberna de la luna</title>
 </head>
@@ -15,29 +16,49 @@
 	<!-- INICIO HEADER -->
 	<header class="site-header nosotros">
 		<div class="contenedor contenido-header">
-			<div class="barra">
-				<a href="../../index.html">
-					<img src="../img/logo-removebg-preview.png" alt="Logotipo">
-				</a>
-
-				<nav class="navegacion">
-					<a href="../../index.html">Inicio</a>
-					<a href="./nosotros.html">Nosotros</a>
-					<a href="./servicios.html">Servicios</a>
-					<a href="./testimonios.html">Testimonios</a>
-					<a href="./contacto.html">Contacto</a>
+			<div class="barra justify-content-around">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+					<div class="container-fluid">
+						<a href="../../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-5">
+							<img src="../img/logo-removebg-preview.png" alt="Logotipo">
+						</a>
+						<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse text-light ms-md-5" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item me-3">
+									<a class="nav-link text-light active" href="../../index.html">Inicio</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" aria-current="page"
+										href="./nosotros.html">Nosotros</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./servicios.html">Servicios</a>
+								</li>
+								<li class="nav-item me-3">
+									<a class="nav-link text-light" href="./testimonios.html">Testimonios</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="./contacto.html">Contacto</a>
+								</li>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<!--FIN HEADER-->
 
+	<!-- INICIO TESTIMONIOS -->
 	<h1 class="fw-300 centrar-texto">Testimonios</h1>
 
-
-	<!-- INICIO TESTIMONIOS -->
-	<section class="contenedor testimoniales contenedor-servicios">
-		<div class="testimonial servicios">
+	<section class="container testimoniales contenedor-servicios">
+		<div class="row justify-content-around">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vero repudiandae ea architecto
 				doloremque dicta unde ratione maxime earum soluta!
@@ -45,7 +66,7 @@
 			<p>- Joaquin</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi dignissimos eos officiis, sed
 				laboriosam!
@@ -53,7 +74,7 @@
 			<p>- claudia</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur labore minima tempore adipisci,
 				aperiam a?
@@ -61,7 +82,7 @@
 			<p>- amanda</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur labore minima tempore adipisci,
 				aperiam a?
@@ -69,7 +90,7 @@
 			<p>- jorge</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. In hic repellendus, cumque itaque asperiores
 				aliquam provident sint explicabo eligendi delectus esse temporibus, maxime commodi laudantium modi iure?
@@ -77,7 +98,7 @@
 			<p>- catalina</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error repellat tempore quo possimus laudantium
 				aliquam quas. Esse?
@@ -85,7 +106,7 @@
 			<p>- pedro</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero autem architecto dignissimos dicta,
 				quibusdam quia aliquam porro quas incidunt enim saepe doloremque.
@@ -93,7 +114,7 @@
 			<p>- javiera</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est quia eveniet. Id sunt tempora in
 				reprehenderit eos.
@@ -101,7 +122,7 @@
 			<p>- armando</p>
 		</div>
 
-		<div class="testimonial servicios">
+		<div class="testimonial col-md-3">
 			<blockquote>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga distinctio, illo ratione odio
 				deserunt repellendus, officia possimus atque nostrum adipisci dicta quo iusto necessitatibus pariatur
@@ -109,17 +130,33 @@
 			</blockquote>
 			<p>- camila</p>
 		</div>
+	</div>
 	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- FIN TESTIMONIOS -->
--*
+
 	<!-- INICIO FORMULARIO  -->
 	<main class="contenedor seccion contenido-centrado">
 		<h2 class="fw-300 centrar-texto">Deja tu testimonio</h2>
 
 		<form action="">
 
-			<fieldset>
-				<legend>Complete sus datos</legend>
+			<fieldset class="reset">
+				<legend class="reset fs-2">Complete sus datos</legend>
 
 				<label for="nombre">Nombre:</label>
 				<input type="text" id="nombre" placeholder="Tu Nombre">
@@ -150,7 +187,7 @@
 				<a href="./contacto.html">Contacto</a>
 			</nav>
 
-			<p class="copyright">todos los derechos reservados 2020 &copy;</p>
+			<p class="copyright">todos los derechos reservados 2022 &copy;</p>
 		</div>
 	</footer>
 	<!-- FIN FOOTER -->
