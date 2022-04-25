@@ -1,0 +1,32 @@
+.boton {
+	display: block;
+	color: #ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	border: none;
+	flex: 0 0 100%;
+}
+
+@media (min-width: 985px) {
+	.boton{
+		display: inline-block;
+		flex: 0 0 auto;
+	}
+}
+
+.boton:hover {
+	cursor: pointer;
+}
+
+.boton-morado {
+	background: #6C5B7B
+}
+
+.boton-rosado {
+	background: #C06C84
+}
