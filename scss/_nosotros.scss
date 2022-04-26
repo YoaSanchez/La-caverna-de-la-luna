@@ -3,7 +3,7 @@
 	text-align: center;
 }
 
-@media (min-width: 985px) {
+@media (min-width: $desktop) {
 	.iconos-nosotros{
 		display: flex;
 		justify-content: space-between;
@@ -12,13 +12,13 @@
 
 .iconos {
 	text-align: center;
-	border: 1px solid #b5b5b5;
+	border: 1px solid $plomo;
 	margin: 2rem 0;
 	padding: 2%;
-	background: #f5f5f5;	
+	background: $gris;	
 }
 
-@media (min-width: 985px) {
+@media (min-width: $desktop) {
 	.iconos{
 		border: none;
 		flex-basis: calc(33.3% - 1rem);
@@ -30,14 +30,13 @@
 	text-transform: uppercase;
 }
 
-@media (min-width: 985px) {
+@media (min-width: $desktop) {
 	.contenido-nosotros{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 2rem;
 	}
   }
-
 
 .texto-nosotros blockquote{
 	font-weight: 900;

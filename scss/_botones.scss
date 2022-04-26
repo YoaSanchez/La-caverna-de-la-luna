@@ -1,6 +1,6 @@
 .boton {
 	display: block;
-	color: #ffffff;
+	color: $blanco;
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 1.5rem;
@@ -12,7 +12,7 @@
 	flex: 0 0 100%;
 }
 
-@media (min-width: 985px) {
+@media (min-width: $desktop) {
 	.boton{
 		display: inline-block;
 		flex: 0 0 auto;
@@ -24,9 +24,9 @@
 }
 
 .boton-morado {
-	background: #6C5B7B
+	background: $morado;
 }
 
 .boton-rosado {
-	background: #C06C84
+	background: $rosa;
 }

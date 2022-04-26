@@ -1,4 +1,4 @@
-@media (min-width: 985px) {
+@media (min-width: $desktop) {
 	.contenedor-servicios{
 		display: flex;
 		justify-content: space-between;
@@ -7,11 +7,12 @@
 }
 
 .servicios {
-	border: 1px solid #b5b5b5;
-	background: #f5f5f5;
+	border: 1px solid $plomo;
+	background: $gris;
 	margin-bottom: 2rem;
 }
-@media (min-width: 985px) {
+
+@media (min-width: $desktop) {
 	.servicios{
 		flex: 0 0 calc(33.3% - 3rem);
 	}
@@ -27,7 +28,7 @@
 }
 
 .precio {
-	color: #C06C84;
+	color: $rosa;
 	font-weight: 700;
 }
 
