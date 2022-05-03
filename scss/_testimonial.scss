@@ -9,35 +9,39 @@
 	flex-direction: column;
 }
 
-.testimonial blockquote {
-	position: relative;
-	padding-left: 5rem;
+.testimonial {
+	blockquote {
+		position: relative;
+		padding-left: 5rem;
+
+		&::before {
+			content: "";
+			background: url(../assets/img/comilla.svg);
+			width: 4rem;
+			height: 4rem;
+			position: absolute;
+			left: -0.5rem;
+		}
+
+	}
+
+	p {
+		text-align: right;
+		text-transform: capitalize;
+		margin-top: auto;
+	}
 }
 
-.testimonial p {
-	text-align: right;
-	text-transform: capitalize;
-	margin-top: auto;
-}
-
-.testimonial blockquote::before {
-	content: "";
-	background: url(../assets/img/comilla.svg);
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	left: -0.5rem;
-}
-
-.hide-xs{
+.hide-xs {
 	display: none;
 }
 
 @media (min-width: $desktop) {
-	.hide-xl{
+	.hide-xl {
 		display: none
 	}
-	.hide-xs{
+
+	.hide-xs {
 		display: flex;
 	}
 }

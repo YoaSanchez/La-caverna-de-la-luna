@@ -1,5 +1,5 @@
 @media (min-width: $desktop) {
-	.contenedor-servicios{
+	.contenedor-servicios {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -7,13 +7,13 @@
 }
 
 .servicios {
-	border: 1px solid $plomo;
-	background: $gris;
+	border: 1px solid lighten($plomo, 6);
+	background: lighten($gris, 3);
 	margin-bottom: 2rem;
 }
 
 @media (min-width: $desktop) {
-	.servicios{
+	.servicios {
 		flex: 0 0 calc(33.3% - 3rem);
 	}
 }
@@ -30,9 +30,4 @@
 .precio {
 	color: $rosa;
 	font-weight: 700;
-}
-
-.ver-todas {
-	display: flex;
-	justify-content: flex-end;
 }

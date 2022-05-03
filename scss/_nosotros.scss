@@ -4,7 +4,7 @@
 }
 
 @media (min-width: $desktop) {
-	.iconos-nosotros{
+	.iconos-nosotros {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -15,11 +15,11 @@
 	border: 1px solid $plomo;
 	margin: 2rem 0;
 	padding: 2%;
-	background: $gris;	
+	background: $gris;
 }
 
 @media (min-width: $desktop) {
-	.iconos{
+	.iconos {
 		border: none;
 		flex-basis: calc(33.3% - 1rem);
 		background: none;
@@ -31,16 +31,18 @@
 }
 
 @media (min-width: $desktop) {
-	.contenido-nosotros{
+	.contenido-nosotros {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 2rem;
 	}
-  }
+}
 
-.texto-nosotros blockquote{
-	font-weight: 900;
-	font-size: 2rem;
-	margin: 0;
-	padding:0 0 1rem 0;
+.texto-nosotros {
+	blockquote {
+		font-weight: 900;
+		font-size: 2rem;
+		margin: 0;
+		padding: 0 0 1rem 0;
+	}
 }

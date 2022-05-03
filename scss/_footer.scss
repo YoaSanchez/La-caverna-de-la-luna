@@ -1,6 +1,10 @@
 .site-footer {
 	background: $azul;
 	margin: 0;
+
+	nav {
+		display: none;
+	}
 }
 
 .contenedor-footer {
@@ -9,19 +13,17 @@
 }
 
 @media (min-width: $desktop) {
-	.contenedor-footer{
+	.contenedor-footer {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 
-.site-footer nav {
-	display: none;
-}
-
 @media (min-width: $desktop) {
-	.site-footer nav{
-		display: block;
+	.site-footer {
+		nav {
+			display: block;
+		}
 	}
 }
 

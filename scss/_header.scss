@@ -18,27 +18,28 @@
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+
+	h1 {
+		color: $blanco;
+		padding-bottom: 2rem;
+		max-width: 60rem;
+		line-height: 2;
+	}
 }
 
 @media (min-width: $desktop) {
-	.contenido-header{
+	.contenido-header {
 		text-align: left;
 	}
 }
 
-.contenido-header h1 {
-	color: $blanco;
-	padding-bottom: 2rem;
-	max-width: 60rem;
-	line-height: 2;
-}
 
 .barra {
 	padding-top: 0rem;
 }
 
 @media (min-width: $desktop) {
-	.barra{
+	.barra {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -54,11 +55,12 @@
 }
 
 @media (min-width: $desktop) {
-	.navegacion a{
+	.navegacion a {
 		display: inline-block;
 		margin-right: 2rem;
 		font-size: 1.8rem;
 	}
+
 	.navegacion a:last-of-type {
 		margin: 0.2rem;
 	}
