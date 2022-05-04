@@ -33,7 +33,6 @@
 	}
 }
 
-
 .barra {
 	padding-top: 0rem;
 }
@@ -46,27 +45,32 @@
 	}
 }
 
-.navegacion a {
-	color: $blanco;
-	text-decoration: none;
-	font-size: 2.2rem;
-	display: block;
-	margin: 1rem 0;
+.navegacion {
+	a {
+		color: $blanco;
+		text-decoration: none;
+		font-size: 2.2rem;
+		display: block;
+		margin: 1rem 0;
+
+		&:hover {
+			color: $lila;
+			transition: color .2s ease-in-out;
+		}
+	}
 }
 
 @media (min-width: $desktop) {
-	.navegacion a {
-		display: inline-block;
-		margin-right: 2rem;
-		font-size: 1.8rem;
-	}
+	.navegacion {
+		a {
+			display: inline-block;
+			margin-right: 2rem;
+			font-size: 1.8rem;
 
-	.navegacion a:last-of-type {
-		margin: 0.2rem;
+			&:last-of-type {
+				margin: 0.2rem;
+			}
+			
+		}
 	}
-}
-
-.navegacion a:hover {
-	color: $lila;
-	transition: color .2s ease-in-out;
 }
